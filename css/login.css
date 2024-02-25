@@ -1,0 +1,159 @@
+
+.EtudEns > div fieldset{
+    width: 30%;
+}
+    
+.EtudEns form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+
+.error{
+    background-color: var(--erreurBckColor);
+    color: var(--erreurColor);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%,0);
+    
+}
+.EtudEns fieldset{
+    position: relative;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    color: black;
+    width: 60%;
+    height: 50%;
+}
+
+.BtnForm{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 25px;
+}
+
+.EtudEns label{
+    font-size: medium;
+    margin-right: 10px;
+    color: black;
+    
+}
+
+.EtudEns h3{
+    margin-bottom: 10px;
+    background-color: var(--secondaryColor);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+}
+
+.EtudEns a{
+    margin-top: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 20%;
+    text-align: center;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.inputLog{
+    text-align: center;
+    display: inline-block;
+    background-color: transparent;
+    font-size: 16px;
+    width: 50%;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid black;
+    display: inline;
+    margin: 10px;
+
+}
+#signIn fieldset::before, #login fieldset::before,.etud::before{
+    content: '';
+    position: absolute;
+    background-color: #D9D9D9;
+    opacity: 0.5;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(10);
+}
+#signIn fieldset{
+    height: 70%;
+}
+
+#type label,#type input{
+    width: 15px;
+    margin-bottom: 10px;
+}
+
+.etud{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: -50%;
+    top: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    color: black;
+    height: 70%;
+    width: 50%;
+}
+.showEtudDiv{
+    animation: showDiv forwards .2s ease-in-out;
+}
+
+.unshowEtudDiv{
+    animation: unshowDiv forwards .25s ease-in-out;
+}
+
+@keyframes showDiv{
+    0%{
+        transform:  translate(100%,-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1) translate(10%,-50%);
+        opacity: 1;
+    }
+}
+@keyframes unshowDiv{
+    0%{
+        transform: scale(1) translate(10%,-50%);
+        opacity: 1;
+    }
+    100%{
+        transform:  translate(100%,-50%);
+        opacity: 0;
+    }
+}

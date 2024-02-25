@@ -1,0 +1,184 @@
+#theme,#affect{
+    position: relative;
+    background-color: transparent;
+    
+}
+#right,#left{
+    opacity: .5;
+    position: absolute;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: rgba(141, 141, 141, 0.363);
+    text-align: center;
+    
+}
+#right{
+    right: 15px;
+    transform: translate(-50%);
+}
+#left{
+    left: 15px;
+    transform: translate(50%);
+}
+#right:hover,#left:hover{
+    opacity: 1;
+    background-color: rgb(49, 49, 49);
+}
+
+.fieldsetTab{
+    
+    width: 80vw;
+    height: 80vh;
+    background-color: var(--tabColr);
+    overflow: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 10px black;
+    transition: all 1s;
+    color: black;
+    z-index: 0;
+}
+.emptyTable{
+    border-radius: 10px;
+    box-shadow: 0 1 4px black;
+    color: black;
+    margin: 15% 25%;
+    padding: 20px 10px;
+    background-color: var(--secondaryColor);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+
+.BTN{
+    float: right;
+    margin-left: 20px;
+    height: 32px;
+    width: 32px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(../img/icons/fullscreen.png);
+    background-size: cover;
+    transition: all .25s;
+}
+#add{
+    float: right;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    background-image: url(../img/icons/add.png);
+    background-size: cover;
+    transition: all .25s;
+}
+.BTN:hover,#add:hover{
+    transform: scale(1.05,1.05);
+    transition: all .1s;
+}
+
+#theme fieldset legend,#affect fieldset legend{
+    text-align:left;
+    padding: 5px 20px;
+    border-radius:5px;
+    background-color:var(--secondaryColor);
+    box-shadow:0 0 10px black;
+    color: black;
+    font-size: 25px;
+}
+
+th{
+    height: 30px;
+    background-color: var(--MainColor);
+    color: var(--text-color);
+    border-radius: 10px 10px 0 0;
+}
+
+td{
+    height: 40px;
+    color: black ;
+    background-color: var(--tableTdColor);
+    font-weight: bold;
+    margin: 20px;
+    border-radius: 2px;
+}
+
+th,td{
+    font-size: 18px;
+    height: 45px;
+    text-align: center;
+    box-shadow: 0 0px 4px black;
+    border: 1px solid black;    
+}
+
+#tdAction{
+    border-radius: 10px;
+}
+
+table{
+
+    width: 100%;
+    background-color: transparent;
+    border-collapse:separate;
+    border-spacing: 5px;
+    margin: 40px 0;
+}
+
+
+.iconAction{
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+.ActionContainer{
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 10px;
+    width:48px;
+    
+}
+
+#delete {
+  background-color: var(--delete-color);
+}
+
+#update {
+  background-color: var(--update-color);
+}
+
+#detail {
+  position: relative;
+  background-color: var(--detail-color);
+  cursor: auto;
+}
+#chose{
+    background-color: var(--detail-color);
+}
+
+#detail p {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--detail-hover-color);
+  color: var(--text-color);
+  min-width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: var(--text-color);
+}
+
+
+
+
+#delete:hover,#update:hover,#chose:hover{
+    transform: scale(1.06,1.06);
+    z-index: 1;
+    transition: all .25s;
+}
+#detail:hover p{
+    display:block;
+}
+
