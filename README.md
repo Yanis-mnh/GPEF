@@ -14,6 +14,6 @@ Visit the web app by clicking on the following link: [GPFE Web App](http://test0
 
 
 ## License
-This project is licensed under the [LICENSE](GPL-3.0 license) .
+This project is licensed under the [GPL-3.0](LICENSE).
 
 Thank you for your interest in the GPFE project!
